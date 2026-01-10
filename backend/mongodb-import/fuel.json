@@ -1,0 +1,54 @@
+[
+  {
+    "_id": { "$oid": "507f1f77bcf86cd799439061" },
+    "truckId": { "$oid": "507f1f77bcf86cd799439031" },
+    "tripId": { "$oid": "507f1f77bcf86cd799439051" },
+    "date": { "$date": "2024-02-01T08:00:00.000Z" },
+    "volume": 200,
+    "cost": 3200,
+    "mileage": 125000,
+    "station": "Station Total - Casablanca",
+    "notes": "Plein avant départ",
+    "createdAt": { "$date": "2024-02-01T08:00:00.000Z" },
+    "updatedAt": { "$date": "2024-02-01T08:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "507f1f77bcf86cd799439062" },
+    "truckId": { "$oid": "507f1f77bcf86cd799439032" },
+    "tripId": { "$oid": "507f1f77bcf86cd799439052" },
+    "date": { "$date": "2024-02-05T06:00:00.000Z" },
+    "volume": 180,
+    "cost": 2880,
+    "mileage": 98000,
+    "station": "Station Shell - Marrakech",
+    "notes": "Plein avant départ",
+    "createdAt": { "$date": "2024-02-05T06:00:00.000Z" },
+    "updatedAt": { "$date": "2024-02-05T06:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "507f1f77bcf86cd799439063" },
+    "truckId": { "$oid": "507f1f77bcf86cd799439035" },
+    "tripId": { "$oid": "507f1f77bcf86cd799439054" },
+    "date": { "$date": "2024-01-25T07:00:00.000Z" },
+    "volume": 250,
+    "cost": 4000,
+    "mileage": 198000,
+    "station": "Station Afriquia - Agadir",
+    "notes": "Plein avant départ",
+    "createdAt": { "$date": "2024-01-25T07:00:00.000Z" },
+    "updatedAt": { "$date": "2024-01-25T07:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "507f1f77bcf86cd799439064" },
+    "truckId": { "$oid": "507f1f77bcf86cd799439031" },
+    "date": { "$date": "2024-02-15T14:00:00.000Z" },
+    "volume": 150,
+    "cost": 2400,
+    "mileage": 125500,
+    "station": "Station Total - Rabat",
+    "notes": "Ravitaillement régulier",
+    "createdAt": { "$date": "2024-02-15T14:00:00.000Z" },
+    "updatedAt": { "$date": "2024-02-15T14:00:00.000Z" }
+  }
+]
+

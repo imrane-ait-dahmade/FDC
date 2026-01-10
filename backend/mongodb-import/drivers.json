@@ -1,0 +1,51 @@
+[
+  {
+    "_id": { "$oid": "507f1f77bcf86cd799439021" },
+    "userId": { "$oid": "507f1f77bcf86cd799439012" },
+    "licenseNumber": "DL-12345-2020",
+    "licenseExpiryDate": { "$date": "2026-12-31T00:00:00.000Z" },
+    "phoneNumber": "+212612345678",
+    "address": "123 Rue Mohammed V, Casablanca",
+    "hireDate": { "$date": "2020-03-15T00:00:00.000Z" },
+    "status": "active",
+    "createdAt": { "$date": "2024-01-16T10:00:00.000Z" },
+    "updatedAt": { "$date": "2024-01-16T10:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "507f1f77bcf86cd799439022" },
+    "userId": { "$oid": "507f1f77bcf86cd799439013" },
+    "licenseNumber": "DL-23456-2019",
+    "licenseExpiryDate": { "$date": "2025-11-30T00:00:00.000Z" },
+    "phoneNumber": "+212623456789",
+    "address": "456 Avenue Hassan II, Rabat",
+    "hireDate": { "$date": "2019-06-01T00:00:00.000Z" },
+    "status": "active",
+    "createdAt": { "$date": "2024-01-17T10:00:00.000Z" },
+    "updatedAt": { "$date": "2024-01-17T10:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "507f1f77bcf86cd799439023" },
+    "userId": { "$oid": "507f1f77bcf86cd799439014" },
+    "licenseNumber": "DL-34567-2021",
+    "licenseExpiryDate": { "$date": "2027-10-15T00:00:00.000Z" },
+    "phoneNumber": "+212634567890",
+    "address": "789 Boulevard Zerktouni, Marrakech",
+    "hireDate": { "$date": "2021-02-10T00:00:00.000Z" },
+    "status": "active",
+    "createdAt": { "$date": "2024-01-18T10:00:00.000Z" },
+    "updatedAt": { "$date": "2024-01-18T10:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "507f1f77bcf86cd799439024" },
+    "userId": { "$oid": "507f1f77bcf86cd799439015" },
+    "licenseNumber": "DL-45678-2022",
+    "licenseExpiryDate": { "$date": "2028-09-20T00:00:00.000Z" },
+    "phoneNumber": "+212645678901",
+    "address": "321 Rue Allal Ben Abdellah, Fès",
+    "hireDate": { "$date": "2022-05-20T00:00:00.000Z" },
+    "status": "active",
+    "createdAt": { "$date": "2024-01-19T10:00:00.000Z" },
+    "updatedAt": { "$date": "2024-01-19T10:00:00.000Z" }
+  }
+]
+

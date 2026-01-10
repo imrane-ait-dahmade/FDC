@@ -1,0 +1,78 @@
+[
+  {
+    "_id": { "$oid": "507f1f77bcf86cd799439081" },
+    "serialNumber": "TIRE-001-FL",
+    "brand": "Michelin",
+    "model": "X Multi D",
+    "position": "front_left",
+    "truckId": { "$oid": "507f1f77bcf86cd799439035" },
+    "installationDate": { "$date": "2023-06-15T00:00:00.000Z" },
+    "mileageAtInstallation": 195000,
+    "currentMileage": 199000,
+    "wearLevel": 75,
+    "status": "replaced",
+    "createdAt": { "$date": "2023-06-15T00:00:00.000Z" },
+    "updatedAt": { "$date": "2024-02-12T12:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "507f1f77bcf86cd799439082" },
+    "serialNumber": "TIRE-002-FR",
+    "brand": "Bridgestone",
+    "model": "R192",
+    "position": "front_right",
+    "truckId": { "$oid": "507f1f77bcf86cd799439031" },
+    "installationDate": { "$date": "2023-08-20T00:00:00.000Z" },
+    "mileageAtInstallation": 120000,
+    "currentMileage": 125500,
+    "wearLevel": 45,
+    "status": "good",
+    "createdAt": { "$date": "2023-08-20T00:00:00.000Z" },
+    "updatedAt": { "$date": "2024-02-15T14:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "507f1f77bcf86cd799439083" },
+    "serialNumber": "TIRE-003-RL",
+    "brand": "Continental",
+    "model": "HDL2",
+    "position": "rear_left",
+    "truckId": { "$oid": "507f1f77bcf86cd799439032" },
+    "installationDate": { "$date": "2023-11-10T00:00:00.000Z" },
+    "mileageAtInstallation": 95000,
+    "currentMileage": 98500,
+    "wearLevel": 20,
+    "status": "good",
+    "createdAt": { "$date": "2023-11-10T00:00:00.000Z" },
+    "updatedAt": { "$date": "2024-02-05T06:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "507f1f77bcf86cd799439084" },
+    "serialNumber": "TIRE-004-RR",
+    "brand": "Goodyear",
+    "model": "G177",
+    "position": "rear_right",
+    "truckId": { "$oid": "507f1f77bcf86cd799439034" },
+    "installationDate": { "$date": "2024-01-15T00:00:00.000Z" },
+    "mileageAtInstallation": 44000,
+    "currentMileage": 45100,
+    "wearLevel": 5,
+    "status": "new",
+    "createdAt": { "$date": "2024-01-15T00:00:00.000Z" },
+    "updatedAt": { "$date": "2024-01-15T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "507f1f77bcf86cd799439085" },
+    "serialNumber": "TIRE-005-SPARE",
+    "brand": "Michelin",
+    "model": "X Multi D",
+    "position": "spare",
+    "truckId": { "$oid": "507f1f77bcf86cd799439031" },
+    "installationDate": { "$date": "2023-05-01T00:00:00.000Z" },
+    "mileageAtInstallation": 115000,
+    "currentMileage": 125500,
+    "wearLevel": 0,
+    "status": "new",
+    "createdAt": { "$date": "2023-05-01T00:00:00.000Z" },
+    "updatedAt": { "$date": "2023-05-01T00:00:00.000Z" }
+  }
+]
+
