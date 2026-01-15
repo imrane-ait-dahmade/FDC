@@ -1,4 +1,5 @@
-import Trip, { ITrip } from "../models/trip.model.ts";
+import Trip from "../models/trip.model.ts";
+import type { ITrip } from "../models/trip.model.ts";
 import Truck from "../models/truck.model.ts";
 import Driver from "../models/driver.model.ts";
 import { AppError } from "../middleware/error.middleware.ts";
@@ -91,6 +92,20 @@ class TripService {
         if (status === "completed") updateData.arrivalDate = new Date();
 
         return await this.updateTrip(id, updateData);
+    }
+
+    async deleteTrip(id: string): Promise<void> {
+        const trip = await Trip.findById(id);
+        if (!trip) {
+            throw new AppError("Trip not found", 404);
+        }
+
+        // If trip is in progress, set truck status back to available
+        if (trip.status === "in_progress" && trip.truckId) {
+            await Truck.findByIdAndUpdate(trip.truckId, { status: "available" });
+        }
+
+        await Trip.findByIdAndDelete(id);
     }
 }
 

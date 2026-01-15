@@ -1,5 +1,5 @@
-import { Response, NextFunction } from "express";
-import { AuthRequest } from "./auth.middleware.ts";
+import type { Response, NextFunction } from "express";
+import type { AuthRequest } from "./auth.middleware.ts";
 import type { UserRole } from "../models/user.model.ts";
 import { AppError } from "./error.middleware.ts";
 

@@ -1,4 +1,4 @@
-import { Request, Response, NextFunction } from "express";
+import type { Request, Response, NextFunction } from "express";
 import truckService from "../services/truck.service.ts";
 import { AppError } from "../middleware/error.middleware.ts";
 

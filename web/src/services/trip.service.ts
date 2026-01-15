@@ -40,5 +40,9 @@ export const tripService = {
     });
     return response.data.data;
   },
+
+  delete: async (id: string): Promise<void> => {
+    await api.delete(`/trips/${id}`);
+  },
 };
 

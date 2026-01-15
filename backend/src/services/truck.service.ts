@@ -1,4 +1,5 @@
-import Truck, { ITruck } from "../models/truck.model.ts";
+import Truck from "../models/truck.model.ts";
+import type { ITruck } from "../models/truck.model.ts";
 import { AppError } from "../middleware/error.middleware.ts";
 
 class TruckService {

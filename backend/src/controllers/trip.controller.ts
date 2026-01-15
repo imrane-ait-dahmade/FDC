@@ -1,6 +1,6 @@
-import { Response, NextFunction } from "express";
+import type { Response, NextFunction } from "express";
 import tripService from "../services/trip.service.ts";
-import { AuthRequest } from "../middleware/auth.middleware.ts";
+import type { AuthRequest } from "../middleware/auth.middleware.ts";
 import { AppError } from "../middleware/error.middleware.ts";
 
 class TripController {
@@ -88,6 +88,18 @@ class TripController {
             res.status(200).json({
                 success: true,
                 data: trip,
+            });
+        } catch (error) {
+            next(error);
+        }
+    }
+
+    async deleteTrip(req: AuthRequest, res: Response, next: NextFunction): Promise<void> {
+        try {
+            await tripService.deleteTrip(req.params.id);
+            res.status(200).json({
+                success: true,
+                message: "Trip deleted successfully",
             });
         } catch (error) {
             next(error);

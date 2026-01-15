@@ -15,6 +15,7 @@ router.get("/", authorize(UserRole.ADMIN), tripController.getAllTrips.bind(tripC
 router.get("/my-trips", tripController.getMyTrips.bind(tripController)); // Driver can see their trips
 router.get("/:id", tripController.getTripById.bind(tripController));
 router.put("/:id", authorize(UserRole.ADMIN), tripController.updateTrip.bind(tripController));
+router.delete("/:id", authorize(UserRole.ADMIN), tripController.deleteTrip.bind(tripController));
 router.patch("/:id/status", tripController.updateTripStatus.bind(tripController)); // Driver can update status
 
 export default router;

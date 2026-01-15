@@ -11,6 +11,7 @@ import {
   Wrench,
   BarChart3,
   User,
+  Users,
 } from "lucide-react";
 
 interface LayoutProps {
@@ -32,6 +33,7 @@ export const Layout = ({ children }: LayoutProps) => {
   const adminNavItems = [
     { path: "/admin/dashboard", label: "Tableau de bord", icon: Home },
     { path: "/admin/trucks", label: "Camions", icon: Truck },
+    { path: "/admin/drivers", label: "Chauffeurs", icon: Users },
     { path: "/admin/trips", label: "Trajets", icon: Route },
     { path: "/admin/reports", label: "Rapports", icon: BarChart3 },
     { path: "/admin/maintenance", label: "Maintenance", icon: Wrench },

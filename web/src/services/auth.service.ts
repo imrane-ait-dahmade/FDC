@@ -1,5 +1,5 @@
 import api from "./api";
-import type { AuthResponse } from "@/types";
+import type { AuthResponse, User, ApiResponse } from "@/types";
 
 export const authService = {
   login: async (email: string, password: string): Promise<AuthResponse> => {
@@ -22,6 +22,11 @@ export const authService = {
 
   getStoredToken: () => {
     return localStorage.getItem("token");
+  },
+
+  getAvailableDrivers: async (): Promise<User[]> => {
+    const response = await api.get<ApiResponse<User[]>>("/auth/available-drivers");
+    return response.data.data;
   },
 };
 

@@ -1,5 +1,6 @@
 import bcrypt from "bcrypt";
-import jwt, { SignOptions } from "jsonwebtoken";
+import jwt from "jsonwebtoken";
+import type { SignOptions } from "jsonwebtoken";
 import User from "../models/user.model.ts";
 import type { IUser, IUserWithoutPassword } from "../models/user.model.ts";
 import { UserRole } from "../models/user.model.ts";
@@ -94,6 +95,27 @@ class AuthService {
         } catch (error) {
             throw new Error("Invalid or expired token");
         }
+    }
+
+    async getAvailableDrivers(): Promise<IUserWithoutPassword[]> {
+        // Get all users with driver role
+        const drivers = await User.find({ role: UserRole.DRIVER }).select("-password");
+        
+        // Get all existing driver profiles
+        const Driver = (await import("../models/driver.model.ts")).default;
+        const existingDriverProfiles = await Driver.find().select("userId");
+        const existingUserIds = existingDriverProfiles.map(d => d.userId.toString());
+        
+        // Filter out users who already have a driver profile
+        const availableDrivers = drivers.filter(user => 
+            !existingUserIds.includes(user._id.toString())
+        );
+        
+        return availableDrivers.map(user => {
+            const userObject = user.toObject();
+            const { password: _, ...userWithoutPassword } = userObject;
+            return userWithoutPassword as IUserWithoutPassword;
+        });
     }
 }
 

@@ -5,6 +5,7 @@ import { Layout } from "./components/Layout";
 import { Login } from "./pages/Login";
 import { AdminDashboard } from "./pages/admin/Dashboard";
 import { AdminTrucks } from "./pages/admin/Trucks";
+import { AdminDrivers } from "./pages/admin/Drivers";
 import { AdminTrips } from "./pages/admin/Trips";
 import { AdminReports } from "./pages/admin/Reports";
 import { AdminMaintenance } from "./pages/admin/Maintenance";
@@ -42,6 +43,7 @@ const AppRoutes = () => {
       <Route element={<AdminLayout />}>
         <Route path="/admin/dashboard" element={<AdminDashboard />} />
         <Route path="/admin/trucks" element={<AdminTrucks />} />
+        <Route path="/admin/drivers" element={<AdminDrivers />} />
         <Route path="/admin/trips" element={<AdminTrips />} />
         <Route path="/admin/reports" element={<AdminReports />} />
         <Route path="/admin/maintenance" element={<AdminMaintenance />} />
