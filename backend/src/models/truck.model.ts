@@ -1,6 +1,6 @@
 import mongoose, { Schema, Document } from "mongoose";
 
-export interface ITruck extends Document {
+export interface ITruck extends Omit<Document, 'model'> {
     licensePlate: string;
     brand: string;
     model: string;
